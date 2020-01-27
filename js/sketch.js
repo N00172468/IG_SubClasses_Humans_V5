@@ -14,5 +14,6 @@ function draw() {
     background(0);
     humans.forEach(human => {
         human.render();
+        human.step();
     });
 }
