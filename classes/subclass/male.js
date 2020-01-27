@@ -9,7 +9,7 @@ class Male extends Human {
         push();
         stroke(this.strokeColour);
         fill(this.colour);
-        ellipse(250 / 2, 250, this.radius, this.radius);
+        ellipse(0, 0, this.radius * 2, this.radius * 2);
         pop();
     }
 }

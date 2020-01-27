@@ -2,7 +2,7 @@ let humans = [];
 let numOfHumans = 1;
 
 function setup() {
-    createCanvas(500, 500);
+    createCanvas(700, 700);
     background(0);
 
     for (let i = 0; i < numOfHumans; i++) {
@@ -15,5 +15,6 @@ function draw() {
     humans.forEach(human => {
         human.render();
         human.step();
+        human.checkEdges();
     });
 }
