@@ -9,7 +9,15 @@ class Female extends Human {
         push();
         stroke(this.strokeColour);
         fill(this.colour);
-        ellipse(0, 0, this.radius, this.radius);
+        ellipse(0, 0, this.radius * 1.5, this.radius * 1.5);
         pop();
     }
+
+    // step() {
+    //     super.step();
+    // }
+
+    // checkEdges() {
+    //     super.checkEdges();
+    // }
 }

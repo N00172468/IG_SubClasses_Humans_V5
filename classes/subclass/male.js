@@ -12,4 +12,12 @@ class Male extends Human {
         ellipse(0, 0, this.radius * 2, this.radius * 2);
         pop();
     }
+
+    // step() {
+    //     super.step();
+    // }
+
+    // checkEdges() {
+    //     super.checkEdges();
+    // }
 }
