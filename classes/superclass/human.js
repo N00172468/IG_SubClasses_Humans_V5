@@ -1,14 +1,16 @@
 class Human {
     constructor() {
-
+        this.radius = 75;
+        // this.strokeColour = (255);
+        // this.colour = (255, 255, 67);
     }
 
     render() {
-        push(); // Start a new drawing state
-        stroke(120,161,255);
-        fill(0, 0, 255);
-        ellipse(250, 250, 50, 50);
-        pop(); // Restore original state
+        var m = new Male();
+        var f = new Female();
+
+        m.renderMale();
+        f.renderFemale();
     }
 }
 
