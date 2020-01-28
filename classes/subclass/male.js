@@ -1,16 +1,17 @@
 class Male extends Human {
-    constructor() {
-        super();
+    constructor(_moleculeId,_x, _y) {
+        super(_moleculeId, _x, _y);
         this.strokeColour = "#87ABFF";
         this.colour = "#004CFF";
     }
 
     renderMale() {
-        push();
-        stroke(this.strokeColour);
-        fill(this.colour);
-        ellipse(0, 0, this.radius * 2, this.radius * 2);
-        pop();
+        // stroke(this.strokeColour);
+        // fill(this.colour);
+        // push();
+        // ellipse(_x, _y, this.radius * 2, this.radius * 2);
+        // pop();
+        super.render();
     }
 
     // step() {
