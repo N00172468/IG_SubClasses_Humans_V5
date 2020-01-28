@@ -6,19 +6,6 @@ class Male extends Human {
     }
 
     renderMale() {
-        // stroke(this.strokeColour);
-        // fill(this.colour);
-        // push();
-        // ellipse(_x, _y, this.radius * 2, this.radius * 2);
-        // pop();
         super.render();
     }
-
-    // step() {
-    //     super.step();
-    // }
-
-    // checkEdges() {
-    //     super.checkEdges();
-    // }
 }
