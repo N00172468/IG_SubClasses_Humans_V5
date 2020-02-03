@@ -13,8 +13,8 @@ class Male extends Human {
 class YoungMale extends Male {
     constructor (_moleculeId, _x, _y) {
         super(_moleculeId, _x, _y);
-        this.pulseRadMax = 50;
-        this.pulseSpeed = 10;
+        this.exciteRadMax = 50;
+        this.exciteSpeed = 10;
         this.colour = "#0000FF";
     }
 }
@@ -22,8 +22,8 @@ class YoungMale extends Male {
 class OldBoy extends Male {
     constructor (_moleculeId, _x, _y) {
         super(_moleculeId, _x, _y);
-        this.pulseRadMax = 5;
-        this.pulseSpeed = 0.1;
+        this.exciteRadMax = 5;
+        this.exciteSpeed = 0.1;
         this.colour = "#5E5EBB";
         this.velocity = createVector(random(-2, 2), random(-2, 2));
     }
