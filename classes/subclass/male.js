@@ -15,6 +15,7 @@ class YoungMale extends Male {
         super(_moleculeId, _x, _y);
         this.pulseRadMax = 50;
         this.pulseSpeed = 10;
+        this.colour = "#0000FF";
     }
 }
 
@@ -23,5 +24,6 @@ class OldBoy extends Male {
         super(_moleculeId, _x, _y);
         this.pulseRadMax = 5;
         this.pulseSpeed = 0.1;
+        this.colour = "#5E5EBB";
     }
 }
