@@ -9,6 +9,8 @@ function setup() {
         // humans.push(new Human(i, random(10, 600), random(10, 600)));
         humans.push(new Male(i, random(10, 600), random(10, 600)));
         humans.push(new YoungMale(i, random(10, 600), random(10, 600)));
+        humans.push(new OldBoy(i, random(10, 600), random(10, 600)));
+        
         humans.push(new Female(i, random(10, 600), random(10, 600)));
     }
 }

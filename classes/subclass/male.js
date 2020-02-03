@@ -17,3 +17,11 @@ class YoungMale extends Male {
         this.pulseSpeed = 10;
     }
 }
+
+class OldBoy extends Male {
+    constructor (_moleculeId, _x, _y) {
+        super(_moleculeId, _x, _y);
+        this.pulseRadMax = 5;
+        this.pulseSpeed = 0.1;
+    }
+}
