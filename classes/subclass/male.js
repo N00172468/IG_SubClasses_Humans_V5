@@ -9,3 +9,11 @@ class Male extends Human {
         super.render();
     }
 }
+
+class YoungMale extends Male {
+    constructor (_moleculeId, _x, _y) {
+        super(_moleculeId, _x, _y);
+        this.pulseRadMax = 50;
+        this.pulseSpeed = 10;
+    }
+}
