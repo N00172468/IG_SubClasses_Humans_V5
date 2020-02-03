@@ -1,6 +1,6 @@
 class Human {
   constructor(_moleculeId, _x, _y) {
-    this.radius = 50;
+    this.radius = random(40, 50);
     this.strokeColour = "#fff";
     this.colour = "#fff";
     this.position = createVector(_x, _y);

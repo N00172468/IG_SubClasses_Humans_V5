@@ -25,5 +25,6 @@ class OldGirl extends Female {
         this.pulseRadMax = 5;
         this.pulseSpeed = 0.1;
         this.colour = "#FCB1E0";
+        this.velocity = createVector(random(-2, 2), random(-2, 2));
     }
 }

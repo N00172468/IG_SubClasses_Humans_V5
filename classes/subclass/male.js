@@ -25,5 +25,6 @@ class OldBoy extends Male {
         this.pulseRadMax = 5;
         this.pulseSpeed = 0.1;
         this.colour = "#5E5EBB";
+        this.velocity = createVector(random(-2, 2), random(-2, 2));
     }
 }
