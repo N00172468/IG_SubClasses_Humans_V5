@@ -39,7 +39,7 @@ class Human {
     }
   }
 
-  pulseHuman() {
+  exciteHuman() {
     if (this.exciteRadMin < this.exciteRadMax) {
       this.exciteRadMin += this.exciteSpeed;
     } else {

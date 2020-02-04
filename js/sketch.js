@@ -23,6 +23,6 @@ function draw() {
         human.render();
         human.step();
         human.checkEdges();
-        human.pulseHuman();
+        human.exciteHuman();
      });
 }
