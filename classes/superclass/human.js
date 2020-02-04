@@ -1,13 +1,13 @@
 class Human {
   constructor(_moleculeId, _x, _y) {
-    this.radius = 50;
+    this.radius = random(40, 50);
     this.strokeColour = "#fff";
     this.colour = "#fff";
     this.position = createVector(_x, _y);
     this.velocity = createVector(random(-10, 10), random(-10, 10));
-    this.pulseRadMin = 0;
-    this.pulseRadMax = 15;
-    this.pulseSpeed = 1;
+    this.exciteRadMin = 0;
+    this.exciteRadMax = 15;
+    this.exciteSpeed = 1;
   }
 
   render() {
@@ -39,17 +39,17 @@ class Human {
     }
   }
 
-  pulseHuman() {
-    if (this.pulseRadMin < this.pulseRadMax) {
-      this.pulseRadMin += this.pulseSpeed;
+  exciteHuman() {
+    if (this.exciteRadMin < this.exciteRadMax) {
+      this.exciteRadMin += this.exciteSpeed;
     } else {
-      this.pulseRadMin = 0;
+      this.exciteRadMin = 0;
     }
     push()
       noFill();
       stroke(this.strokeColour);
       translate(this.position.x, this.position.y);
-      ellipse(0, 0, (this.radius + this.pulseRadMin) * 2, (this.radius + this.pulseRadMin) * 2);
+      ellipse(0, 0, (this.radius + this.exciteRadMin) * 2, (this.radius + this.exciteRadMin) * 2);
     pop()
   }
 }
